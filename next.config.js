@@ -5,11 +5,11 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['localhost', 'davidsulava.github.io/public'],
+    domains: ['localhost', 'davidsulava.github.io'],
   },
   reactStrictMode: true,
   output: 'export', // Enables static HTML export
-  basePath: '/phone-customisation-studio', // Important for GitHub Pages subdirectories
+  basePath: '/phone-customisation-studio/', // Important for GitHub Pages subdirectories
 };
 
 module.exports = nextConfig;
