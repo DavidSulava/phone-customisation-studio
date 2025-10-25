@@ -9,7 +9,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   output: 'export', // Enables static HTML export
-  basePath: '/phone-customisation-studio/', // Important for GitHub Pages subdirectories
+  // basePath: '/phone-customisation-studio/', // Important for GitHub Pages subdirectories
 };
 
 module.exports = nextConfig;
