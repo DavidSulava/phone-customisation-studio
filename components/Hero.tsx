@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+const config = require('../next.config')
 
 export function Hero() {
   return (
@@ -50,7 +51,7 @@ export function Hero() {
             <div className="relative w-full h-[600px]">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl" />
               <Image
-                src="/images/phone-case.svg"
+                src={config.basePath + "/images/phone-case.svg"}
                 alt="Phone Case Design Preview"
                 fill
                 className="object-contain"
