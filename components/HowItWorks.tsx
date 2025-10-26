@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+const config = require('@/next.config');
+
 const steps = [
   {
     number: 1,
@@ -38,7 +40,7 @@ export function HowItWorks() {
             <div key={step.number} className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-6">
                 <Image
-                  src={step.image}
+                  src={config.basePath + step.image}
                   alt={step.title}
                   fill
                   className="object-contain"

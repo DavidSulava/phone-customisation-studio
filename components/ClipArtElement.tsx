@@ -17,6 +17,8 @@ interface ClipArtElementProps {
   onRemove?: () => void;
 }
 
+const config = require('@/next.config');
+
 export const ClipArtElement = ({
   src,
   position,
@@ -105,7 +107,7 @@ export const ClipArtElement = ({
         onTouchEnd={handleTouchEnd}
       >
         <Image
-          src={src}
+          src={config.basePath + src}
           alt="Clipart"
           fill
           className="pointer-events-none"

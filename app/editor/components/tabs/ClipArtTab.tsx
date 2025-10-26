@@ -4,6 +4,8 @@ import { useEditor } from '@/contexts/EditorContext';
 import { Sticker, Trash, X } from 'lucide-react';
 import Image from 'next/image';
 
+const config = require('@/next.config');
+
 const clipArts = [
   '/cliparts/clipart-1.svg',
   '/cliparts/clipart-2.svg',
@@ -43,7 +45,7 @@ export const ClipArtTab = () => {
                   onClick={() => selectClipArt(element.id)}
                 >
                   <Image
-                    src={element.src}
+                    src={config.basePath + element.src}
                     alt="Clipart"
                     fill
                     className="pointer-events-none"
@@ -72,7 +74,7 @@ export const ClipArtTab = () => {
               className="aspect-square bg-muted rounded-lg flex items-center justify-center hover:bg-muted/80 transition-colors relative overflow-hidden"
             >
               <Image
-                src={src}
+                src={config.basePath + src}
                 alt={`Clipart ${index + 1}`}
                 fill
                 className="p-2"

@@ -31,6 +31,8 @@ import {
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
 
+const config = require('@/next.config');
+
 export const ImageOptions = () => {
   const {
     originalImage,
@@ -275,7 +277,7 @@ export function ImageEffectsDrawer({
             {originalImage && (
               <Image
                 fill
-                src={originalImage}
+                src={config.basePath + originalImage}
                 alt="Background"
                 objectFit="contain"
                 className="pointer-events-none"

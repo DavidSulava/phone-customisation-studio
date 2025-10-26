@@ -12,6 +12,8 @@ import {
 import { TextElement } from './TextElement';
 import { ClipArtElement } from './ClipArtElement';
 
+const config = require('@/next.config');
+
 export const PhoneCaseBg = () => {
   const {
     originalImage,
@@ -123,7 +125,7 @@ export const PhoneCaseBg = () => {
             >
               <Image
                 fill
-                src={currentImage}
+                src={config.basePath + currentImage}
                 alt="Background"
                 className="pointer-events-none"
                 draggable={false}

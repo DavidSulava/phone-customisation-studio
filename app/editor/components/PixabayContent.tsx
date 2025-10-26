@@ -13,6 +13,8 @@ import { Search } from 'lucide-react';
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 
+const config = require('@/next.config');
+
 export const PixabayContent = () => {
   const {
     setOriginalImage,
@@ -127,7 +129,7 @@ export const PixabayContent = () => {
               onClick={() => handlePixabayImageSelect(image)}
             >
               <Image
-                src={image.previewURL}
+                src={config.basePath + image.previewURL}
                 alt={image.tags}
                 fill
                 objectFit="cover"

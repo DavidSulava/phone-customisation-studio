@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { PhoneBrand, PhoneModel } from '@/types';
 
+const config = require('@/next.config');
+
 const phoneTypes: {
   id: number;
   name: string;
@@ -70,7 +72,7 @@ export const PhoneCaseSelector = () => {
               <div className="relative w-full h-64 mb-4 group-hover:scale-105 transition-transform duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5 rounded-lg" />
                 <Image
-                  src={phone.image}
+                  src={config.basePath + phone.image}
                   alt={phone.name}
                   fill
                   className="object-contain"

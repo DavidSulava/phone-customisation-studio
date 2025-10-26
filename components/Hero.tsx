@@ -3,7 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-const config = require('../next.config')
+
+const config = require('@/next.config');
 
 export function Hero() {
   return (
