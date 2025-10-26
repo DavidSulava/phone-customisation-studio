@@ -12,8 +12,8 @@ const nextConfig = {
   },
   reactStrictMode: true,
   output: 'export', // Enables static HTML export
-  basePath: isProd ?'/phone-customisation-studio/' : '', // Important for GitHub Pages subdirectories
-  assetPrefix: isProd ?'/phone-customisation-studio/' : '',
+  basePath: isProd ?'/phone-customisation-studio' : '', // Important for GitHub Pages subdirectories
+  assetPrefix: isProd ?'/phone-customisation-studio' : '',
 };
 
 module.exports = nextConfig;
