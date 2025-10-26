@@ -10,7 +10,7 @@ export const Logo = () => {
         animate={{ opacity: 1, x: 0 }}
         className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
       >
-        CaseCanvas
+       Custom Phone Cases
       </motion.div>
     </Link>
   );
