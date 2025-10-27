@@ -125,7 +125,7 @@ export const PhoneCaseBg = () => {
             >
               <Image
                 fill
-                src={config.basePath + currentImage}
+                src={currentImage}
                 alt="Background"
                 className="pointer-events-none"
                 draggable={false}
