@@ -109,7 +109,7 @@ export const UploadsTab = () => {
         </div>
       </div>
 
-      <PixabayContent />
+      {/*<PixabayContent />*/}
     </div>
   );
 };
